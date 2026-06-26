@@ -1,0 +1,89 @@
+.companies {
+  width: 100%;
+  padding: 80px 8%;
+  background: white;
+}
+
+.companies-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.companies-title h2 {
+  font-size: 40px;
+  color: #0f172a;
+}
+
+.companies-title p {
+  margin-top: 10px;
+  color: #64748b;
+  font-size: 18px;
+}
+
+.companies-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap: 25px;
+}
+
+.company-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 30px;
+  transition: .3s;
+}
+
+.company-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,.1);
+}
+
+.company-logo {
+  width: 70px;
+  height: 70px;
+  background: #2563eb;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.company-card h3 {
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.company-card p {
+  color: #64748b;
+}
+
+.company-card span {
+  display: inline-block;
+  margin: 18px 0;
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.company-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company-footer button {
+  padding: 10px 18px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.company-footer button:hover {
+  background: #1d4ed8;
+}
