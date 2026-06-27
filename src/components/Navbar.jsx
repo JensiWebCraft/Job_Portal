@@ -12,10 +12,10 @@ function Navbar() {
       {/* Navigation Links */}
       <ul className="nav-links">
         <li><a href="/">Home</a></li>
-        <li><a href="/">Jobs</a></li>
-        <li><a href="/">Companies</a></li>
-        <li><a href="/">About</a></li>
-        <li><a href="/">Contact</a></li>
+        <li><a href="/jobs">Jobs</a></li>
+        <li><a href="/companies">Companies</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
       </ul>
 
       {/* Buttons */}

@@ -1,30 +1,25 @@
-import React from 'react'
-import NaNvbar from './components/Navbar'
-import Footer from './components/Footer'
-import Hero from './components/Hero'
-import SearchSection from './components/SearchSection'
-import PopularCategory from './components/PopularCategory'
-import FeaturedJobs from './components/FeaturedJobs'
-import TopCompanies from './components/TopCompanies'
-import WhyChooseUs from './components/WhyChooseUs'
-import Statistics from './components/Statistics'
-import Testimonials from './components/Testimonials'
-import CallToAction from './components/CallToAction'
+import { Routes, Route } from "react-router-dom";
 
-export default function App() {
+import Home from "./pages/Home";
+import Jobs from "./pages/Jobs";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import JobDetails from "./pages/JobDetails";
+
+function App() {
   return (
-    <div>
-      <NaNvbar />
-      <Hero/>
-      <SearchSection/>
-      <PopularCategory/>
-      <FeaturedJobs />
-      <TopCompanies/>
-      <WhyChooseUs/>
-      <Statistics/>
-      <Testimonials/>
-      <CallToAction/>
-      <Footer />
-    </div>
-  )
+    <Routes>
+      <Route path="/" element={<Home />} />
+
+      <Route path="/jobs" element={<Jobs />} />
+
+      <Route path="/jobs/:id" element={<JobDetails />} />
+
+      <Route path="/login" element={<Login />} />
+
+      <Route path="/signup" element={<Signup />} />
+    </Routes>
+  );
 }
+
+export default App;

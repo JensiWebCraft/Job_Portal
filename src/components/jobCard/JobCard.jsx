@@ -1,6 +1,8 @@
 import "./JobCard.css";
+import { Link } from "react-router-dom";
 
-function JobCard() {
+
+function JobCard({ job }) {
   return (
     <div className="job-card">
 
@@ -9,51 +11,50 @@ function JobCard() {
         <div className="company">
 
           <div className="company-logo">
-            G
+            {job.company.charAt(0)}
           </div>
 
           <div>
-            <h2>Frontend Developer</h2>
-            <p>Google</p>
+            <h2>{job.title}</h2>
+            <p>{job.company}</p>
           </div>
 
         </div>
 
         <span className="job-type">
-          Full Time
+          {job.type}
         </span>
 
       </div>
 
       <div className="job-info">
 
-        <span>📍 Bangalore</span>
+        <span>📍 {job.location}</span>
 
-        <span>💰 ₹8 - 12 LPA</span>
+        <span>💰 {job.salary}</span>
 
-        <span>💼 2+ Years</span>
-
-        <span>🕒 2 Days Ago</span>
+        <span>💼 {job.experience}</span>
 
       </div>
 
       <div className="skills">
 
-        <span>React</span>
-
-        <span>JavaScript</span>
-
-        <span>HTML</span>
-
-        <span>CSS</span>
+        {
+          job.skills.map((skill, index) => (
+            <span key={index}>{skill}</span>
+          ))
+        }
 
       </div>
 
       <div className="job-buttons">
 
-        <button className="details-btn">
-          View Details
-        </button>
+        <Link
+  to={`/jobs/${job.id}`}
+  className="border border-blue-600 text-blue-600 px-5 py-2 rounded-lg hover:bg-blue-600 hover:text-white"
+>
+  View Details
+</Link>
 
         <button className="apply-btn">
           Apply Now

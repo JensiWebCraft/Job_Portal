@@ -4,26 +4,32 @@ import JobsBanner from '../components/JobsBanner/JobsBanner'
 import JobsSearch from '../components/JobsSearch/JobsSearch'
 import JobsFilter from '../components/JobsFilter/JobsFilter'
 import JobCard from '../components/jobCard/JobCard'
+import JobList from '../components/JobList/JobList'
+import Footer from '../components/Footer'
+import './jobs.css'
+import Pagination from '../components/Pagination/Pagination'
 
 export default function Jobs() {
   return (
    <>
-  <div className="jobs-page">
+   <Navbar />
 
-    <JobsFilter />
+    <JobsBanner />
 
-    <div className="job-list">
+    <JobsSearch />
 
-        <JobCard />
 
-        <JobCard />
+ <section className="job-container">
+      <JobsFilter />
+    
+       <JobList />
 
-        <JobCard />
+    </section>
 
-    </div>
+    {/* <Pagination/> */}
 
-</div>
-UI Previe
+    <Footer/>
+
    </>
   )
 }
