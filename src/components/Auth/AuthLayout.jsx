@@ -98,36 +98,37 @@ export default function AuthLayout({
       </div>
 
       {/* RIGHT SIDE */}
-      <div className="flex w-full items-center justify-center bg-white px-8 lg:w-1/2">
+     {/* RIGHT SIDE */}
+<div className="w-full lg:w-1/2 bg-white overflow-y-auto">
 
-        <div className="w-full max-w-md">
+  <div className="max-w-md mx-auto px-8 py-12">
 
-          <Link
-            to="/"
-            className="mb-10 inline-flex items-center gap-2 lg:hidden"
-          >
-            <FaBriefcase className="text-blue-600" />
+    <Link
+      to="/"
+      className="mb-8 inline-flex items-center gap-2 lg:hidden"
+    >
+      <FaBriefcase className="text-blue-600" />
 
-            <span className="text-3xl font-bold text-blue-700">
-              JobPortal
-            </span>
-          </Link>
+      <span className="text-3xl font-bold text-blue-700">
+        JobPortal
+      </span>
+    </Link>
 
-          <h1 className="text-5xl font-bold text-slate-900">
-            {title}
-          </h1>
+    <h1 className="text-4xl font-bold text-slate-900">
+      {title}
+    </h1>
 
-          <p className="mt-4 text-lg text-gray-500">
-            {subtitle}
-          </p>
+    <p className="mt-3 text-gray-500">
+      {subtitle}
+    </p>
 
-          <div className="mt-10">
-            {children}
-          </div>
+    <div className="mt-8">
+      {children}
+    </div>
 
-        </div>
+  </div>
 
-      </div>
+</div>
 
     </div>
   );

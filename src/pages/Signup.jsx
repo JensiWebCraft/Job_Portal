@@ -1,4 +1,5 @@
 import AuthLayout from "../components/Auth/AuthLayout";
+import SignupForm from "../components/Auth/SignupForm";
 
 export default function Signup() {
   return (
@@ -6,7 +7,7 @@ export default function Signup() {
       title="Create Account 🚀"
       subtitle="Join thousands of job seekers."
     >
-      Signup Form
+     <SignupForm />
     </AuthLayout>
   );
 }
