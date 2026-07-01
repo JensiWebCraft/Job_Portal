@@ -12,7 +12,7 @@ import Pagination from '../components/Pagination/Pagination'
 export default function Jobs() {
   return (
    <>
-   <Navbar />
+
 
     <JobsBanner />
 
@@ -28,7 +28,7 @@ export default function Jobs() {
 
     {/* <Pagination/> */}
 
-    <Footer/>
+  
 
    </>
   )

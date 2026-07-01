@@ -13,7 +13,6 @@ import Footer from "../components/Footer";
 function Home() {
   return (
     <>
-      <NaNvbar />
       <Hero />
       <SearchSection />
       <PopularCategory />
@@ -23,7 +22,6 @@ function Home() {
       <Statistics />
       <Testimonials />
       <CallToAction />
-      <Footer />
     </>
   );
 }

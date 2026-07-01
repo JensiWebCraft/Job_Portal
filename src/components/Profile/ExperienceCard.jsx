@@ -1,0 +1,32 @@
+import { FaBriefcase } from "react-icons/fa";
+
+export default function ExperienceCard() {
+  return (
+    <div className="bg-white rounded-2xl shadow-sm border border-gray-200 p-6">
+
+      <div className="flex items-center gap-3 mb-5">
+        <FaBriefcase className="text-blue-600 text-2xl" />
+        <h2 className="text-2xl font-semibold">
+          Experience
+        </h2>
+      </div>
+
+      <h3 className="text-xl font-semibold">
+        MERN Stack Developer
+      </h3>
+
+      <p className="text-gray-600">
+        ABC Technologies
+      </p>
+
+      <p className="text-gray-500">
+        Ahmedabad
+      </p>
+
+      <p className="text-gray-500">
+        7 Months Experience
+      </p>
+
+    </div>
+  );
+}

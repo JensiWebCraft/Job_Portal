@@ -15,7 +15,7 @@ import SimilarJobs from "../components/JobDetails/SimilarJobs";
 export default function JobDetails() {
   return (
     <>
-      <Navbar />
+    
 
       <main className="bg-slate-100 min-h-screen">
 
@@ -66,7 +66,6 @@ export default function JobDetails() {
 
       </main>
 
-      <Footer />
     </>
   );
 }
